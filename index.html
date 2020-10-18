@@ -1,17 +1,12 @@
- <a onclick="myAudioFunction('A');">
-     <img src="https://github.com/tukisblukis/tukisblukis.github.io/tree/main/res/Hank_Exercising_and_Determined.png">
- </a>
- <a onclick="myAudioFunction('B');">
-     <img src="https://github.com/tukisblukis/tukisblukis.github.io/tree/main/res/Hank_Exercising_and_Determined.png">
- </a>
- <script>
-     var aAudio = new Audio('http://www.w3schools.com/html/horse.ogg');
-     var bAudio = new Audio('http://www.w3schools.com/html/horse.mp3');
-     function myAudioFunction(letter) {
-         if(letter == 'a') {
-             aAudio.play();
-         } else if(letter == 'b') {
-             bAudio.play();
-         }
-     }
- </script>
+<body>
+    <script>
+		function play()
+		{
+			var audio = document.getElementById("audio");
+			audio.play();
+        }
+   </script>
+
+<img src="res/hankhill.png" value="PLAY"  onclick="play()">
+<audio id="audio" src="res/boomersooner.ogg" ></audio>
+</body>
