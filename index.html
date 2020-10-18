@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <div id="lH">
-	<audio controls id="aH">
-		<source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg">
-		<source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-	</audio>
-	H
-	</div>
-</html>
+ <a onclick="myAudioFunction('A');">
+     <img src="https://github.com/tukisblukis/tukisblukis.github.io/tree/main/res/Hank_Exercising_and_Determined.png">
+ </a>
+ <a onclick="myAudioFunction('B');">
+     <img src="https://github.com/tukisblukis/tukisblukis.github.io/tree/main/res/Hank_Exercising_and_Determined.png">
+ </a>
+ <script>
+     var aAudio = new Audio('http://www.w3schools.com/html/horse.ogg');
+     var bAudio = new Audio('http://www.w3schools.com/html/horse.mp3');
+     function myAudioFunction(letter) {
+         if(letter == 'a') {
+             aAudio.play();
+         } else if(letter == 'b') {
+             bAudio.play();
+         }
+     }
+ </script>
